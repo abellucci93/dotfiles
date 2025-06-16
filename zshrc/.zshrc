@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH="~/.oh-my-zsh"
+export ZSH="/Users/andrea/.oh-my-zsh"
 
 FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
 
@@ -70,7 +70,7 @@ ZSH_THEME="bira"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git ansible aws docker flutter gitignore)
+plugins=(git ansible aws docker gitignore)
 
 source $ZSH/oh-my-zsh.sh
 
