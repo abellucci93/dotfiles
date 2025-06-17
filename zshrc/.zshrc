@@ -102,6 +102,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Docker completion
+zstyle ':completion:*:*:docker:*' option-stacking yes
+zstyle ':completion:*:*:docker-*:*' option-stacking yes
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export NVM_DIR="$HOME/.nvm"
@@ -111,7 +115,6 @@ export NVM_DIR="$HOME/.nvm"
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /opt/homebrew/bin/terraform terraform
 
-source ~/.docker/init-zsh.sh || true # Added by Docker Desktop
 
 # https://github.com/junegunn/fzf - FuzzyFinder
 source <(fzf --zsh)
