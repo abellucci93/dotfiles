@@ -128,6 +128,8 @@ eval "$(zoxide init --cmd cd zsh)"
 # Kubectl autocompletion
 source <(kubectl completion zsh)
 alias k=kubectl
+alias kctx=kubectl-ctx
+alias kns=kubectl-ns
 
 # K9S autocompletion
 source <(k9s completion zsh)
