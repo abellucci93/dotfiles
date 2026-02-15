@@ -1,3 +1,6 @@
+# Enable vi motions in terminal
+set -o vi
+
 export GPG_TTY=$(tty)
 
 # Path to your oh-my-zsh installation.
