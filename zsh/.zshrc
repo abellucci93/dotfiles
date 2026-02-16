@@ -134,5 +134,7 @@ alias k=kubectl
 alias kctx=kubectl-ctx
 alias kns=kubectl-ns
 
-# K9S autocompletion
+# K9S
 source <(k9s completion zsh)
+export K9S_CONFIG_DIR="$HOME/.config/k9s"
+
