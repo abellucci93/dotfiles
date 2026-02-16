@@ -109,18 +109,8 @@ source $ZSH/oh-my-zsh.sh
 zstyle ':completion:*:*:docker:*' option-stacking yes
 zstyle ':completion:*:*:docker-*:*' option-stacking yes
 
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /opt/homebrew/bin/terraform terraform
-
-# Pyenv
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
 
 # https://github.com/junegunn/fzf - FuzzyFinder
 source <(fzf --zsh)
@@ -137,4 +127,7 @@ alias kns=kubectl-ns
 # K9S
 source <(k9s completion zsh)
 export K9S_CONFIG_DIR="$HOME/.config/k9s"
+
+# Mise mise-en-place
+eval "$(mise activate zsh)"
 
